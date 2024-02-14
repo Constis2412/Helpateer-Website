@@ -1,15 +1,49 @@
+.Header {grid-area: Header;}
+.MenuList {grid-area: MenuList;}
+.ContractList {grid-area: ContractList;}
+
+
+.gridcontainer{
+    display: grid;
+    grid-template-areas:
+        'Header Header Header Header Header Header'
+        'MenuList ContractList ContractList ContractList ContractList ContractList'
+        'MenuList ContractList ContractList ContractList ContractList ContractList'    
+    ;
+    background-color: coral;
+    gap: 10px;
+    padding: 10;
+}
+
+.gridcontainer > div{
+   
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+
+
+
+
 body{
     background-color: darkgray;
     margin: 0;
 }
 .Header{
-    
+    padding: 1rem;
+    margin: 0;
     text-align: center;
     align-items: center;
-    color: greenyellow;
+    color: lightblue;
     background-color: #04AA6D;
 }
 
+nav{
+    margin-bottom: 0;
+}
 
 nav ul {
     list-style-type: none;
@@ -27,7 +61,7 @@ nav  li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 1.2rem;
     text-decoration: none;
   }
 nav  li a:hover:not(.active) {
