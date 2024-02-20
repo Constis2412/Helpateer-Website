@@ -1,4 +1,9 @@
-.Header {grid-area: Header;}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .MenuList {grid-area: MenuList;}
 .ContractList {grid-area: ContractList;}
 .ContractList2 {grid-area: ContractList2;}
@@ -7,12 +12,12 @@
 .gridcontainer{
     display: grid;
     grid-template-areas:
-        'Header Header Header Header Header Header'
-        'MenuList ContractList ContractList ContractList ContractList ContractList'
-        'ContractList2 ContractList2 ContractList2 ContractList2 ContractList2 ContractList2' 
+        
+        'MenuList ContractList ContractList'
+        'ContractList2 ContractList2 ContractList2' 
         
     ;
-    background-color: coral;
+    
     gap: 10px;
     padding: 10;
 }
@@ -25,23 +30,21 @@
     font-size: 30px;
 }
 
-
-
-
+.Header{
+  padding: 1rem;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  color: lightblue;
+  background-color: #04AA6D;
+}
 
 
 body{
     background-color: darkgray;
     margin: 0;
 }
-.Header{
-    padding: 1rem;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-    color: lightblue;
-    background-color: #04AA6D;
-}
+
 
 nav{
     margin-bottom: 0;
