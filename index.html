@@ -4,31 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="CSS/navigation.css" />
     <script defer src="Javascript/activeView.js"></script>
+    <script defer src="Javascript/parallaxeffekt.js"></script>
     <title>Helpateer</title>
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <nav class="Navbar">
+  <br>
+
+      <header class="header_home">
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contracts.html">Contracts</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li style="float: right"><a href="about.html">About</a></li>
+            <li><a href="index.html">Home<span></span></a></li>
+            <li><a href="assignments.html">Assignments<span></span></a></li>
+            <li><a href="profile.html">Profile<span></span></a></li>
           </ul>
         </nav>
-
-        <div>
-          <img src="Images/castle-2003867_1920.jpg" class="background" />
-          <img
-            src="Images/people-silhouette-clipart-xl.png"
-            class="foreground"
-          />
-          <h1 class="title">Helpateer</h1>
-        </div>
       </header>
-      <section>
+
+      <section class="parallax">
+        <img 
+        src="Images/castle-2003867_1920.jpg" 
+        id="castle" />
+
+        <img
+          src="Images/people-silhouette-clipart-xl.png"
+          id="people"/>
+
+          <h2 id="p_text">Helpatear</h2>
+      </section>
+
+      <section class="sec_text">
+        <h2>Parallax text</h2>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores a
         sit accusantium expedita dignissimos, quas et, veniam enim unde delectus
         aspernatur sequi doloremque eos vitae inventore debitis. Esse ratione
@@ -61,8 +68,22 @@
         obcaecati cumque porro dolorem. Illo consequatur, atque est laudantium
         repellat veniam minus aperiam exercitationem corporis, doloremque
         nostrum odio? Fuga a deleniti excepturi tempora ratione incidunt porro
+        voluptatum eos.<br> </br>
+        repudiandae quod ad eligendi. Harum vel molestias facere ullam molestiae
+        maiores assumenda? Inventore vel amet magnam iusto a culpa in? Aliquam
+        quis cum asperiores eveniet nulla architecto vitae temporibus assumenda
+        repellat quasi amet mollitia maiores error ipsa unde delectus corporis
+        obcaecati vel tenetur beatae, aut quisquam. Harum autem repudiandae
+        rerum voluptatibus esse, deleniti, consectetur qui veritatis, sit
+        recusandae pariatur. Unde officia qui velit alias veritatis vitae a vero
+        illum consectetur. Delectus pariatur ratione illo. Atque, illo culpa qui
+        distinctio necessitatibus modi pariatur possimus dignissimos, natus eos
+        delectus facere maiores. Totam soluta quisquam assumenda molestiae sit,
+        obcaecati cumque porro dolorem. Illo consequatur, atque est laudantium
+        repellat veniam minus aperiam exercitationem corporis, doloremque
+        nostrum odio? Fuga a deleniti excepturi tempora ratione incidunt porro
         voluptatum eos.
       </section>
-    </div>
+
   </body>
 </html>
