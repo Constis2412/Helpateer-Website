@@ -1,75 +1,9 @@
-.Header {grid-area: Header;}
-.MenuList {grid-area: MenuList;}
-.ContractList {grid-area: ContractList;}
-.ContractList2 {grid-area: ContractList2;}
 
-
-.gridcontainer{
-    display: grid;
-    grid-template-areas:
-        'Header Header Header Header Header Header'
-        'MenuList ContractList ContractList ContractList ContractList ContractList'
-        'ContractList2 ContractList2 ContractList2 ContractList2 ContractList2 ContractList2' 
-        
-    ;
-    background-color: coral;
-    gap: 10px;
-    padding: 10;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.gridcontainer > div{
-   
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-
-
-
-
-
-
 body{
-    background-color: darkgray;
-    margin: 0;
+  background-color: black;
 }
-.Header{
-    padding: 1rem;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-    color: lightblue;
-    background-color: #04AA6D;
-}
-
-nav{
-    margin-bottom: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-nav  li {
-    float: left;
-  }
-  
-nav  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1rem 1.2rem;
-    text-decoration: none;
-  }
-nav  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-nav a:is(:link, :active, :visited).active {
-    background-color: #04AA6D;
-  }

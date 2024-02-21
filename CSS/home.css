@@ -1,85 +1,78 @@
-body{
-    margin: 0;
-}
-
-nav{
-    margin-bottom: 0;
-}
-
-nav ul {
-    list-style-type: none;
+*{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-nav  li {
-    float: left;
-  }
-  
-nav  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1rem 1.2rem;
-    text-decoration: none;
-  }
-nav  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-nav a:is(:link, :active, :visited).active {
-    background-color: #04AA6D;
+    box-sizing: border-box;
   }
 
-.wrapper{
-    height: 100vh;
-    overflow-y: auto;
+body{
+    min-height: 100vh;
     overflow-x: hidden;
-    perspective: 10px;
-}
-header{
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
-    position: relative;
 }
 
-header > div{
+
+
+.parallax{
+    margin-top: -20px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100% ;
-    transform-style: preserve-3d;
-    z-index: -1;
+    height: 100vh;
+   /* background-image: url('Images/castle-2003867_1920.jpg') no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#castle, #people{
+    height: 100%;
+    object-fit:cover;
+
+
+}
+
+#people{
+    height: 100%;
+    object-fit:cover;
+
+}
+
+#p_text{
+    position: absolute;
+    font-size: 5em;
+    color:darkslategray;
+    text-shadow: 2px 4px 5px #333;
+}
+
+.sec_text{
+    position: relative;
+    background-color: darkslategray;
+    color: white;
+    font-size: 2rem;
+}
+/*
 .background, .foreground{
     position: absolute;
     height: 100%;
     width: 100%;
-    left: -8px;
-    object-fit: cover;
-    z-index: -1;
+    object-fit:cover;
+    z-index: -1; 
 }
 
 .background{
-    transform: translateZ(-10px) scale(2);
+    
 }
 
 .foreground{
-    transform: translateZ(-5px) scale(1.5);
+    
 }
-
-.title{
-    font-size: 7rem;
-    color: black;
-    text-shadow: 0 0 10px #559999;
-}
-
-section{
-    font-size: 2rem;
-    padding: 2rem;
-    background-color: #559999;
-}
+*/
