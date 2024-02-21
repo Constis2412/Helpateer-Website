@@ -51,12 +51,7 @@ body{
     pointer-events: none;
 }
 
-#castle{
-    height: 100%;
-    object-fit:cover;
-}
-
-#people{
+#castle, #people{
     height: 100%;
     object-fit:cover;
 }
@@ -72,6 +67,7 @@ body{
     position: relative;
     background-color: darkslategray;
     color: white;
+    font-size: 2rem;
 }
 /*
 .background, .foreground{
