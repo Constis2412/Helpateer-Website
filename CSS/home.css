@@ -36,11 +36,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('castle-2003867_1920.jpg') no-repeat;
+   /* background-image: url('Images/castle-2003867_1920.jpg') no-repeat;*/
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 
 .parallax img{
     position: absolute;
@@ -50,12 +51,9 @@ body{
     pointer-events: none;
 }
 
-#castle{
+#castle, #people{
     height: 100%;
-}
-
-.parallax #people{
-    top: 50%;
+    object-fit:cover;
 }
 
 #p_text{
@@ -69,22 +67,22 @@ body{
     position: relative;
     background-color: darkslategray;
     color: white;
+    font-size: 2rem;
 }
-
+/*
 .background, .foreground{
     position: absolute;
     height: 100%;
     width: 100%;
-    left: -8px;
-    object-fit: cover;
-    z-index: -1;
-    
+    object-fit:cover;
+    z-index: -1; 
 }
 
 .background{
-    transform: translateZ(-10px) scale(2);
+    
 }
 
 .foreground{
-    transform: translateZ(-5px) scale(1.5);
+    
 }
+*/
