@@ -7,27 +7,9 @@
 body{
     min-height: 100vh;
     overflow-x: hidden;
-    
 }
 
-.header_home{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
 
-}
-
-.logo{
-    font-size: 2em;
-    color: white;
-    user-select: none;
-}
 
 .parallax{
     margin-top: -20px;
