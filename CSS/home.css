@@ -54,6 +54,14 @@ body{
 #castle, #people{
     height: 100%;
     object-fit:cover;
+
+
+}
+
+#people{
+    height: 100%;
+    object-fit:cover;
+
 }
 
 #p_text{
