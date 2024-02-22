@@ -36,7 +36,8 @@
 
 }
 
-.nav ul li:hover{
+.nav ul li:hover,
+.nav ul li.hovered{
     background-color: white;
 }
 
@@ -49,7 +50,8 @@
     color: white;
 }
 
-.nav ul li:hover a{
+.nav ul li:hover a,
+.nav ul li.hovered a{
     color: darkslategrey;
 }
 
@@ -76,8 +78,9 @@
     white-space: nowrap;
 }
 
-.nav ul li:hover a::before{
-    content: '';
+.nav ul li:hover a::before,
+.nav ul li.hovered a::before{
+    content: "";
     position: absolute;
     right: 0;
     top: -50px;
@@ -89,7 +92,8 @@
     pointer-events: none;
 }
 
-.nav ul li:hover a::after{
+.nav ul li:hover a::after,
+.nav ul li.hovered a::after{
     content: '';
     position: absolute;
     right: 0;
