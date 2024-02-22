@@ -15,10 +15,12 @@
     background-color: darkslategray;
     border-left: 10px solid darkslategray;
     transition: 0.5s;
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 
+.nav.active{
+    width: 80px;
+}
 .nav ul{
     position: absolute;
     top: 0;
@@ -113,6 +115,11 @@
     min-height: 100vh;
     background-color: white;
     transition: 0.5s;
+}
+
+.main.active{
+    width: calc(100% - 80px);
+    left: 80px;  
 }
 
 .topbar{
